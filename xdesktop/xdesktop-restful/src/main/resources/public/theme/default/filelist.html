@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>文件管理</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery/jquery.1.11.2.min.js"></script>
+    <!--弹窗插件-->
+    <script type="text/javascript" src="js/jquery/jquery.zxxbox.3.0.js"></script>
+    <!--表单验证插件-->
+    <link type="text/css" href="js/3rd/validate/validationEngine.jquery.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/3rd/validate/jquery.validationEngine.js"></script>
+    <script type="text/javascript" src="js/3rd/validate/jquery.validationEngine-zh_CN.js"></script>
+    <!--文件上传插件-->
+    <script type="text/javascript" src="js/3rd/webuploader/webuploader.min.js"></script>
+    <link type="text/css" href="js/3rd/webuploader/webuploader.css" rel="stylesheet" />
+    <!--//-->
+    <script type="text/javascript" src="js/modules/common.js"></script>
+    <script type="text/javascript" src="js/modules/filelist.js"></script>
+</head>
+
+
+<body>
+<div class="top">
+    <div class="back">
+        <img src="images/ic_back.png" />
+    </div>
+    <div class="place">
+        <span>当前位置：</span>
+        <ul class="placeul">
+            <li><a href="#" class="_fullpath"></a></li>
+        </ul>
+    </div>
+    <div class="topright">
+        <div class="user">
+            <span>admin</span>
+            <i>消息</i>
+            <b>5</b>
+        </div>
+    </div>
+    <div class="operate">
+        <ul class="operateul">
+            <li>
+                <a href="#">文件操作</a>
+                <div class="operateul_sub">
+                    <a href="#" data-tag="createDirBtn">新建文件夹</a>
+                    <a href="#" data-tag="removeFileBtn">删除</a>
+                    <a href="#" data-tag="renameFileBtn">重命名</a>
+                    <a href="#" data-tag="copyFileBtn">复制</a>
+                    <a href="#" data-tag="moveFileBtn">剪切</a>
+                    <a href="#" data-tag="pasteFileBtn">黏贴</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<table class="filetable">
+
+    <thead>
+    <tr>
+        <th width="30%">名称</th>
+        <th width="15%">修改日期</th>
+        <th width="10%">类型</th>
+        <th width="7%">大小</th>
+        <th width="38%"></th>
+    </tr>
+    </thead>
+
+    <tbody class="_filelist">
+
+    </tbody>
+</table>
+
+<div class="zxxbox_list" id="confirm">
+    <form id="confirm_from">
+        <ul class="list">
+            <li class="line">
+                <label id="confirm_label"></label>
+                <input id="confirm_input" type="text" class="short-input validate[required]"/>
+            </li>
+        </ul>
+        <ul class="button">
+            <li>
+                <input type="button" class="btn confirm_btn" value="确定"/>
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>基本信息</span></div>
+
+    <ul class="forminfo short">
+        <li><label>文章标题</label><input name="" type="text"/><i>标题不能超过30个字符</i></li>
+        <li><label>关键字</label><input name="" type="text"/><i>多个关键字用,隔开</i></li>
+        <li><label>是否审核</label><cite><input name="" type="radio" value=""
+                                            checked="checked"/>是&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio"
+                                                                                               value=""/>否</cite></li>
+        <li>
+            <label>副作用(院外)</label>
+            <input name="sideEffect" type="text" class="short-input" value=""/>
+        </li>
+        <li>
+            <label>医保限量</label>
+            <input name="medicareLimit" type="text" class="short-input validate[required,custom[number]]"
+                   value=""/>
+        </li>
+        <li>
+            <label>副作用(院外)</label>
+            <input name="sideEffect" type="text" class="short-input" value=""/>
+        </li>
+        <li style="width:100%">
+            <label>备注</label>
+            <input name="remark" type="text" class="long-input" value=""/>
+        </li>
+        <li>
+            <label>副作用(院外)</label>
+            <input name="sideEffect" type="text" class="short-input" value="" readonly/>
+        </li>
+        <li>
+            <label>库存</label>
+            <input name="inventory" type="text" class="short-input validate[required,custom[number]]"
+                   value="" disabled/>
+        </li>
+        <li style="width: 100%"><label>文章内容</label><textarea name="" cols="" rows="" class="textinput"></textarea></li>
+        <li style="width: 100%"><label>&nbsp;</label><input name="" type="button" class="btn" value="确认保存"/></li>
+    </ul>
+
+
+</div>
+
+
+</body>
+</html>
